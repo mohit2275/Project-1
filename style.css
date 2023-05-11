@@ -1,0 +1,280 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: cursive;
+}
+
+body {
+    background: url('2.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+/* ////////////////// NAVBAR  ///////////////// */
+
+#navbar {
+    padding: 15px 0px 15px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#logo {
+    height: 12vh;
+    width: 28vh;
+    border-radius: 30px;
+}
+
+#logo:hover {
+    box-shadow: 0px 0px 20px white;
+    transition: .3s;
+    margin-left: 30px;
+}
+
+#menu a,
+#menu i {
+    color: white;
+    margin: 0px 20px;
+    font-size: 24px;
+    letter-spacing: 1px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+#menu a {
+    display: none;
+}
+
+#menu a:hover {
+    color: rgb(174, 239, 239);
+    transition: .3s;
+    border-bottom: 3px darkcyan solid;
+    padding-bottom: 5px;
+    text-shadow: 0px 0px 10px black;
+}
+
+#menu button {
+    background-color: transparent;
+    border: 0px;
+    height: fit-content;
+    width: fit-content;
+}
+
+#hidden {
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    width: 100%;
+    margin-bottom: 50px;
+    display: none;
+}
+
+#toggleBtn {
+    cursor: pointer;
+}
+
+#hidden a {
+    background-color: rgb(39, 44, 42, .5);
+    color: white;
+    text-align: right;
+    padding: 30px 20px;
+    font-weight: 600;
+    width: 100%;
+    font-size: 30px;
+    letter-spacing: 2px;
+    text-decoration: none;
+    text-transform: uppercase;
+    opacity: 100%;
+}
+
+#hidden a:hover {
+    transition: .3s;
+    color: white;
+    background-color: rgb(168, 184, 184);
+    padding-right: 100px;
+    text-shadow: 0px 0px 10px darkcyan
+}
+
+@media screen and (max-width:800px) {
+    #logo {
+        height: 10vh;
+        width: 25vh;
+    }
+
+
+    #navbar {
+        padding: 10px 20px;
+    }
+
+    #one a {
+        display: none;
+    }
+
+    #toggleBtn {
+        display: block;
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width:450px) {
+    #logo {
+        height: 8vh;
+        width: 20vh;
+    }
+}
+
+
+/* /// SECTION 1 ////// */
+
+
+.sec1 {
+    height: 80vh;
+    box-shadow: 0px 0px 10px rgb(75, 73, 73);
+    color: white;
+    text-align: center;
+    background: linear-gradient(rgba(60, 224, 202, 0.8), rgba(88, 80, 80, 0.5)),
+        rgba(56, 56, 56, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    margin-bottom: 50px;
+}
+
+.s1text {
+    margin: 50px;
+    height: 80vh;
+    line-height: 40px;
+}
+
+.sec1 h1 {
+    color: darkcyan;
+    text-shadow: 0px 0px 10px white;
+    font-size: 40px;
+    text-decoration: underline;
+    line-height: 80px;
+}
+
+.sec1 h2 {
+    font-size: 30px;
+}
+
+.sec1 img {
+    height: 100%;
+    width: 100%;
+    box-shadow: 0px 0px 10px black;
+}
+
+@media screen and (max-width:1000px) {
+    .s1text {
+        height: fit-content;
+        margin: 20px 0px;
+        line-height: 40px;
+    }
+
+    .s1text h1 {
+        line-height: 50px;
+        font-size: 30px;
+    }
+
+    .s1text h2 {
+        font-size: 0px;
+    }
+}
+
+@media screen and (max-width:950vh) {
+    .sec1 {
+        height: auto;
+    }
+
+    .sec1 h2 {
+        font-size: 24px;
+    }
+}
+
+@media screen and (max-width:920px) {
+    .sec1 {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+/* ////////////// SEC 2 ///////////////// */
+.sec2 {
+    padding: 0px 10px;
+}
+
+.sec2 h1 {
+    color: rgb(245, 242, 242);
+    text-shadow: 0px 0px 10px rgb(44, 114, 85);
+    font-size: 30px;
+    text-decoration: underline;
+    letter-spacing: 1px;
+    font-weight: 100;
+}
+
+.sec2links {
+    display: flex;
+    height: 40vh;
+    justify-content: space-around;
+    align-items: center;
+    margin: 20px 0px;
+}
+
+.sec2links img {
+    height: 100%;
+    width: 100%;
+}
+
+.sec2links img:hover {
+    box-shadow: 0px 0px 20px white;
+}
+
+.links {
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    position: relative;
+}
+
+.links a {
+    color: rgb(235, 255, 255);
+    text-shadow: 0px 0px 10px rgb(44, 42, 42);
+    text-decoration: none;
+    font-size: 40px;
+    position: absolute;
+    top: 40%;
+    right: 35%;
+    width: fit-content;
+}
+
+.links a:hover {
+    color: rgb(247, 165, 165);
+    font-size: 50px;
+    text-decoration: underline;
+    right: 30%;
+    top: 35%;
+}
+
+@media screen and (max-width:800px) {
+    #logo {
+        height: 10vh;
+        width: 25vh;
+    }
+
+    .sec2links {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
+}
+
+@media screen and (max-width:400px) {
+    .links a {
+        font-size: 30px;
+    }
+}
